@@ -1,5 +1,5 @@
 # devenv-nix-c
-NixOS developer environment for C89 with CMake/Ninja/ccache
+NixOS developer environment for C89/C90 with CMake/Ninja/ccache
 
 ## Compile and run
 1. `nix develop`
