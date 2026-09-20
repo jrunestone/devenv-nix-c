@@ -1,0 +1,13 @@
+{
+  "lsp": {
+    "clangd": {
+      "binary": {
+      "arguments": [
+        "---",
+        "-Iinc",
+        "-xc"
+      ]
+      }
+    }
+  }
+}
