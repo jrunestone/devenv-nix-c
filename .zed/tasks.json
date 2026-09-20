@@ -11,7 +11,7 @@
       "-B",
       "build",
       "-S",
-      "."
+      "$ZED_WORKTREE_ROOT"
     ]
   },
 
@@ -26,7 +26,7 @@
 
   {
     "label": "Run",
-    "command": "./build/projectname"
+    "command": "$ZED_WORKTREE_ROOT/build/projectname"
   },
 
   {
@@ -37,7 +37,7 @@
       "--track-origins=yes",
       // "--gen-suppressions=all",
       "--suppressions=valgrind.supp",
-      "./build/projectname"
+      "$ZED_WORKTREE_ROOT/build/projectname"
     ]
   }
 ]
