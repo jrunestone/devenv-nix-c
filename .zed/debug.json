@@ -6,8 +6,8 @@
       "args": ["-C", "build"],
       "cwd": "$ZED_WORKTREE_ROOT"
     },
-    "program": "./build/projectname",
+    "program": "$ZED_WORKTREE_ROOT/build/projectname",
     "request": "launch",
-    "adapter": "GDB"
+    "adapter": "CodeLLDB"
   }
 ]
