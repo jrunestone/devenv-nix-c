@@ -1,0 +1,43 @@
+[
+  {
+    "label": "cmake config DEBUG",
+    "command": "cmake",
+    "args": [
+      "-DCMAKE_BUILD_TYPE=Debug",
+      "-DCMAKE_EXPORT_COMPILE_COMMANDS=1",
+      "-DCMAKE_C_COMPILER_LAUNCHER=ccache",
+      "-G",
+      "Ninja",
+      "-B",
+      "build",
+      "-S",
+      "."
+    ]
+  },
+
+  {
+    "label": "Build",
+    "command": "ninja",
+    "args": [
+      "-C",
+      "build"
+    ]
+  },
+
+  {
+    "label": "Run",
+    "command": "./build/myproject"
+  },
+
+  {
+    "label": "Profile",
+    "command": "valgrind",
+    "args": [
+      "--leak-check=full",
+      "--track-origins=yes",
+      // "--gen-suppressions=all",
+      "--suppressions=valgrind.supp",
+      "./build/myproject"
+    ]
+  }
+]
