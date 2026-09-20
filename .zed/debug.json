@@ -1,0 +1,13 @@
+[
+  {
+    "label": "Debug",
+    "build": {
+      "command": "ninja",
+      "args": ["-C", "build"],
+      "cwd": "$ZED_WORKTREE_ROOT"
+    },
+    "program": "./build/myproject",
+    "request": "launch",
+    "adapter": "GDB"
+  }
+]
