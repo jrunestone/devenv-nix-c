@@ -1,1 +1,7 @@
+Debug/
+obj/
+bin/
 build/
+*.opt
+*.ncb
+*.plg
