@@ -6,7 +6,7 @@
       "args": ["-C", "build"],
       "cwd": "$ZED_WORKTREE_ROOT"
     },
-    "program": "./build/myproject",
+    "program": "./build/projectname",
     "request": "launch",
     "adapter": "GDB"
   }
