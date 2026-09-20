@@ -26,7 +26,7 @@
 
   {
     "label": "Run",
-    "command": "./build/myproject"
+    "command": "./build/projectname"
   },
 
   {
@@ -37,7 +37,7 @@
       "--track-origins=yes",
       // "--gen-suppressions=all",
       "--suppressions=valgrind.supp",
-      "./build/myproject"
+      "./build/projectname"
     ]
   }
 ]
